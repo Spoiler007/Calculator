@@ -1,0 +1,56 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', cursive;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/back\ img4.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: rgba(17, 17, 205, 0.83);
+}
+.calculator{
+    position: relative;
+    display: grid;
+}
+
+#value{
+    grid-column: span 4;
+    height: 80px;
+    text-align: right;
+    margin: 2px;
+    border-radius: 7px;
+    outline: none;
+    padding: 0 10px;
+    font-weight: bold;
+    background-color: #f2f2f2ec;
+    border: 2px solid skyblue;
+}
+.num{
+    margin:2px;
+    cursor: pointer;
+}
+.num:hover{
+    background-color: #f2f2f2;
+    color: black;
+    transition: 0.3s all ease-in-out;
+}
+.calculator span{
+    display:grid;
+    width: 62px;
+    height: 62px;
+    place-items: center;
+    border: 2px solid skyblue;
+    border-radius: 20%;
+}
+#equal{
+    background-color:green;
+}
+#clear{
+    background-color:red;
+}
